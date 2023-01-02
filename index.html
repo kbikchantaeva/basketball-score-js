@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="table">
+        <div class="team">
+          <h3>HOME</h3>
+          <div class="score-container">
+            <p id="score-home-el">0</p>
+          </div>
+          <div class="btn-container">
+            <button id="onep-home-el" onclick="onePointHome()">+ 1</button>
+            <button id="twop-home-el" onclick="twoPointsHome()">+ 2</button>
+            <button id="threep-home-el" onclick="threePointsHome()">+ 3</button>
+          </div>
+        </div>
+        <div class="team">
+          <h3>GUEST</h3>
+          <div class="score-container">
+            <p id="score-guest-el">0</p>
+          </div>
+          <div class="btn-container">
+            <button id="onep-guest-el" onclick="onePointGuest()">+ 1</button>
+            <button id="twop-guest-el" onclick="twoPointsGuest()">+ 2</button>
+            <button id="threep-guest-el" onclick="threePointsGuest()">
+              + 3
+            </button>
+          </div>
+        </div>
+      </div>
+      <button id="new-game-btn" onclick="newGame()">NEW GAME</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
